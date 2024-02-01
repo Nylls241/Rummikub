@@ -34,7 +34,7 @@ NB : S'il vous plaît ,lisez attentivement le Guide du projet afin de mieux comp
 
  # Guide du projet
  
-  Un conseil faite le sur une machine linux , pour ne pas avoir trop de mal . Toutes installation considéré ici sont sur machines sous inux . 
+  Un conseil faite le sur une machine linux , pour ne pas avoir trop de mal . Toutes installation considéré ici sont sur machines sous Unix/linux . 
  
 1 - installation de la SDL2:
 
@@ -50,9 +50,9 @@ NB : S'il vous plaît ,lisez attentivement le Guide du projet afin de mieux comp
   Plus rapide : vous pouvez tout aussi bien tapez la commande suivante  pour tout installer rapidement ,voici la commande : sudo apt-get install libsdl2-dev libsdl2-ttf libsdl2-image-dev . 
   
   
- 3 - guide d'utilisation du dossier project_algo : 
+ 3 - guide d'utilisation du dossier Rummikub (le dossier principal du projet) : 
  
- Pour commencer , lorsque vous entrez dans le dossier project_algo vous verrez 2 dossiers (include et src) et 2 fichiers (makefile et README.md que vous êtes entrain de lire en ce moment) .
+ Pour commencer , lorsque vous entrez dans le dossier Rummikub, avec un `cd Rummikub` vous verrez 2 dossiers (include et src) et 3 fichiers (makefile, README.md que vous êtes entrain de lire en ce moment, et un fichier pour la licence) .
   - Dans le dossier include se trouvent tous les fichiers d'entêtes du projet notamment , defs.h qui contient toutes les définitions   des constantes écritent dans les fichiers sources , destroy.h qui contient les prototypes des fonctions  pour libération des réssources quant-on quitte la SDL ou l'un de ses composants , include.h est le fichier où est contenu tous les #include du projet , notemment la librairie SDL , stdio etc ... vous remarquerez que dans tous nos fichiers sources du projet( voir project_algo/src) , il y'a un seul chemin qui est : "../include/include.h . Et enfin deux autres fichiers du dossier include , notamment init_draw.h qui contient tous les prototypes des fonctions principales du menu , jusqu'à l'implémentation du Rummikub et le fichier structures.h qui contient toutes les structures du jeu . 
   - Dans le dossier src , sont contenus tous les fichiers sources et quelques autres dossiers importants , notamment le dossier images qui contient toutes les images des tuiles , le dossier bouton qui contient tous les boutons du menu du jeu , et fonts contient la police des écritures du menu . Pour le menu du jeu , c'est le fichier display_text.c où est contenu toutes les fonctions du menu , jusqu'à l'évènement pour ouvrir(lorsqu'on clique sur commencez)  la fenêtre principale du jeu . Les fichiers sources s'occupant de la fenêtre s'ouvrant lorsque l'on clique sur "commencez" sont : init.c, dessin_rendu1.c, input.c, destroy.c (pour mieux comprendre lisez s'il vous plaît les fichiers sources énumérés ci-contre dans l'ordre). Et enfin, le main.c appelle une seule fonction(execution)  qui fait tout le travail .
   
