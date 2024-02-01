@@ -1,4 +1,4 @@
-## PROJET_ALGO
+## Rummikub
 
 Rummikub est le jeu à réaliser dans ce projet. Nous le codons en C avec la biliothèque SDL2. Pour jouer au Rummikub, il vous faut:
 2 à 4 joueurs.
